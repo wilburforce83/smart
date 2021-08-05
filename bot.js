@@ -1,21 +1,12 @@
-// Developed by basilisk for use as a twitterbot boilerplate to help clients increase exposure by quote tweeting from a range of hashtags
-// and a range of canned responses with @mentions to increase traffic through their sites.
+// Boilerplate developed by Will Sheare for Aquaco Water Recycling Limited. It is untested, but a basic boilerplate to worked on to help with the development
+// or a basic smart attenuation system
 
-var G = require('./globals');
-var follow = require('./lib/followNew');
-var reply = require('./lib/followBack');
-var reTweet = require('./lib/reTweet');
+var global = require('./globals');
 
-follow.users()
-setInterval(follow.users, 1000 * 60 * 60 * G.followFreq);
+var rss = require('./lib/metofficeRSS');
 
 
-setTimeout(function () {
-  reply.thankyou()
-  setInterval(reply.thankyou, 1000 * 60 * 60 * G.followBackFreq);
+setTimeout(function () { // run checking cycle
+  rss.checkWeather()
+  setInterval(rss.checkWeather, 1000 * 60 * 60 * global.frequency); // converts minutes into milliseconds for working with node.
 }, 5000);
-
-setTimeout(function () {
-  reTweet.now()
-  setInterval(reTweet.now, 1000 * 60 * 60 * G.reTweetFreq);
-}, 10000);

@@ -1,18 +1,28 @@
 {
-    "name": "bot",
-    "version": "1.0.0",
-    "description": "Twitter Bot - NodeJS",
-    "author": "Nishant Srivastava <nisrulz@gmail.com>",
-    "dependencies": {
-        "twit": "*"
-    },
-    "scripts": {
-        "start": "node bot.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/nisrulz/twitterbot-nodejs.git"
-    },
-    "analyze": true,
-    "license": "Apache-2.0"
+  "name": "smart-att",
+  "version": "1.0.0",
+  "description": "Twitter Bot - NodeJS",
+  "author": "Nishant Srivastava <nisrulz@gmail.com>",
+  "dependencies": {
+    "rss-to-json": "^2.0.1",
+    "twit": "*"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nisrulz/twitterbot-nodejs.git"
+  },
+  "analyze": true,
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nisrulz/twitterbot-nodejs/issues"
+  },
+  "homepage": "https://github.com/nisrulz/twitterbot-nodejs#readme",
+  "main": "bot.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
