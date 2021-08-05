@@ -12,7 +12,19 @@ then;
 then;
 `npm install`
 
-you can do this in any IDE, or if you are on linux you can just `cd lib`, `sudo nano globals.js`
+### Parameters for each project
+
+You will need to set the paramters for each project you can do this in any IDE, or if you are on linux you can just `cd lib`, `sudo nano globals.js`
+
+```
+// Variables
+
+  client_company: "test FM team", // client name of FM company
+  rss: "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/UK.xml",
+  location: "London ", // as per MET OFFICE RSS feed IMPORTANT!!! If location is London add a space before " to avoid londonderry triggering a false positive.
+  warnings: "rain", // Type of event
+  frequency: "15", // in minutes
+```
 
 to run;
 `cd smart` then, `npm start`
@@ -48,6 +60,7 @@ relay.getState().then((value) => {
 });
 ```
 
+Finally, if you want the system to email a user you could easily add a logging system and email notification to keep people up to date with the current state. This has not been set up, but is easy to do.
 
 
 ## Requirements.
