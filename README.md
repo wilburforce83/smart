@@ -87,7 +87,7 @@ I am happy to receive any bugs, issues or pull requests to help make the code be
 License
 =======
 
-    Copyright 2021 Will Shearer for Aquaco Water Recycling Limited
+    Copyright 2021 Will Shearer.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
